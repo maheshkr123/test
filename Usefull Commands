@@ -1,0 +1,20 @@
+WMIC BIOS GET SERIALNUMBER
+wmic /node:HOSTNAME OS get FreePhysicalMemory
+wmic /node:HOSTNAME cpu get loadpercentage
+
+Ping Test
+ping google.com >> c:\Test.txt -t
+
+Set ip through command prompt:-
+netsh interface ipv4 set address name="Ethernet" static 10.2.50.211 255.255.254.0 10.2.50.1
+
+How to check wwn number
+https://support.purestorage.com/Solutions/Microsoft_Platform_Guide/FlashArray_Connectivity/Retrieve_World_Wide_Names_(WWNs)_on_Windows_Server
+
+Find the pid of the process running in the port number (e.g., 8080)
+
+netstat -ano | findStr "8080"
+---------------------------------------------------------------------------------
+Find the process name by pid
+
+tasklist /fi "pid eq 2216"
